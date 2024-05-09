@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <header className="App-header flex justify-between p-6 px-36 mb-9">
-        <h1 className="text-3xl">Restaur</h1>
+        <h1 className="text-4xl tracking-widest">Restaur</h1>
         <ul className="flex gap-4 items-center text-lg cursor-pointer">
           <li>Home</li>
           <li>Sign in</li>

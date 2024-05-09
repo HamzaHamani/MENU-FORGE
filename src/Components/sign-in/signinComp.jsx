@@ -1,6 +1,6 @@
 function SigninComp() {
   return (
-    <div className="bg-[#feffff] w-[50%] p-10 px-16 rounded-lg text-black">
+    <div className="bg-[#feffff] w-[50%] p-14 px-16 rounded-lg text-black">
       <div>
         <div className="bg-gray-400 w-14 h-14 mb-2 rounded-full">
           {/* img here */}
@@ -8,7 +8,7 @@ function SigninComp() {
         <h2 className="text-3xl mt-5 mb-1 text-black">Create an account</h2>
         <p className="text-sm text-black">
           Already have an account?{" "}
-          <span className="underline cursor-pointer">Log in</span>
+          <span className="underline cursor-pointer">Sign in</span>
         </p>
       </div>
       <div className="mt-7">
