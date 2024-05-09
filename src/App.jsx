@@ -7,8 +7,16 @@ import Signup from "./pages/Signup";
 function App() {
   return (
     <BrowserRouter>
-      <header className="App-header bg-white p-6 mb-9">
-        <h1>Food App</h1>
+      <header className="App-header flex justify-between p-6 px-36 mb-9">
+        <h1 className="text-3xl">Restaur</h1>
+        <ul className="flex gap-4 items-center text-lg cursor-pointer">
+          <li>Home</li>
+          <li>Sign in</li>
+          <li>Sign up</li>
+          <button className="bg-[#2b7a78] text-lg px-6 py-3 rounded-lg">
+            Start now
+          </button>
+        </ul>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -3,9 +3,9 @@ import SigninComp from "../Components/sign-in/signinComp";
 
 function Signin() {
   return (
-    <div className="h-screen bg-[#1F1F1F]">
-      <div className="flex  gap-36 w-[1500px]  m-auto">
-        <LeftSigninComp />
+    <div className="">
+      <div className="flex  gap-36 w-[1500px]  mx-auto justify-evenly">
+        {/* <LeftSigninComp /> */}
         <SigninComp />
       </div>
     </div>

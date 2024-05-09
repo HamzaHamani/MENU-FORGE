@@ -1,6 +1,6 @@
 function SigninComp() {
   return (
-    <div className="bg-white w-[50%] p-10 px-16 rounded-lg text-black">
+    <div className="bg-[#feffff] w-[50%] p-10 px-16 rounded-lg text-black">
       <div>
         <div className="bg-gray-400 w-14 h-14 mb-2 rounded-full">
           {/* img here */}
@@ -54,7 +54,7 @@ function SigninComp() {
               className="bg-gray-100/10 p-3 border border-gray-200 rounded-lg w-full"
             />
           </div>
-          <button className="bg-[#1f1f1f] text-lg text-white py-2 rounded-md">
+          <button className="bg-[#2b7a78] text-lg text-white py-2 rounded-md">
             Sign up
           </button>
         </form>
