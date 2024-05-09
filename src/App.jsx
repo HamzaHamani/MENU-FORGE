@@ -7,7 +7,7 @@ import Signup from "./pages/Signup";
 function App() {
   return (
     <BrowserRouter>
-      <header className="App-header bg-red-200 p-6 mb-9">
+      <header className="App-header bg-white p-6 mb-9">
         <h1>Food App</h1>
       </header>
       <Routes>
