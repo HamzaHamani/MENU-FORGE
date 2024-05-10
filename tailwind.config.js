@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "#F2F9ED",
+        primary: "#064929",
+        secondary1: "#AFDD97",
+        secondary2: "#40AD52",
+        accent: "#D3D34F",
+      },
+    },
     screens: {
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }

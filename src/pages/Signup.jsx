@@ -1,4 +1,3 @@
-import LeftSigninComp from "../Components/sign-in/leftSigninComp";
 import SigninComp from "../Components/sign-in/signinComp";
 
 function Signin() {
