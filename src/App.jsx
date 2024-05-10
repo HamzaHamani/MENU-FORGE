@@ -7,9 +7,9 @@ import Signup from "./pages/Signup";
 function App() {
   return (
     <BrowserRouter>
-      <header className="App-header flex justify-between p-6 px-36 mb-9">
+      <header className="App-header flex justify-between p-6 px-36 lg:px-16 mb-9">
         <h1 className="text-4xl tracking-widest">Restaur</h1>
-        <ul className="flex gap-4 items-center text-lg cursor-pointer">
+        <ul className="flex gap-4 items-center text-lg cursor-pointer lg:hidden ">
           <li>Home</li>
           <li>Sign in</li>
           <li>Sign up</li>
