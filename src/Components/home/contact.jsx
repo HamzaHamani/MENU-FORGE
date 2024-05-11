@@ -54,48 +54,103 @@ function Contact() {
             </ul>
           </div>
         </section>
-        <section className="bg-red-50 w-full">
-          <div>
-            <div className="flex justify-between">
-              <div>
-                <h3 className="text-gray-900 font-medium">First aName</h3>
+        <section className="bg-red w-full p-8 flex flex-col gap-12">
+          {/* start first name last name */}
+          <div className="mt-8">
+            <div className="flex justify-between gap-20">
+              <div className="flex-1 ">
+                <label
+                  className="block text-lg font-medium text-gray-900"
+                  htmlFor="first-name"
+                >
+                  First Name
+                </label>
                 <input
+                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  id="first-name"
+                  name="first-name"
+                  placeholder=""
                   type="text"
-                  className="w-full p-3 rounded-md bg-accnt  mt-2 border-none "
-                  placeholder="Enter your first name"
                 />
               </div>
-              <div>
-                <h3>Last Name</h3>
+              <div className="flex-1">
+                <label
+                  className="block text-lg font-medium text-gray-900"
+                  htmlFor="first-name"
+                >
+                  Last Name
+                </label>
                 <input
+                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  id="first-name"
+                  name="first-name"
+                  placeholder=""
                   type="text"
-                  className="w-full p-3 rounded-md mt-2 border-none "
-                  placeholder="Enter your Last name"
                 />
               </div>
             </div>
           </div>
+          {/* end first name last name */}
+          {/* start EMAIL  NUMBER  */}
           <div>
-            <div>
-              <h3>Last Name</h3>
-              <input
-                type="text"
-                className="w-full p-3 rounded-md mt-2"
-                placeholder="Enter your Last name"
-              />
-            </div>
-            <div>
-              <h3>Last Name</h3>
-              <input
-                type="text"
-                className="w-full p-3 rounded-md mt-2"
-                placeholder="Enter your Last name"
-              />
+            <div className="flex justify-between gap-20">
+              <div className="flex-1 ">
+                <label
+                  className="block text-lg font-medium text-gray-900"
+                  htmlFor="first-name"
+                >
+                  Email
+                </label>
+                <input
+                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  id="email"
+                  name="email"
+                  placeholder=""
+                  type="email"
+                />
+              </div>
+              <div className="flex-1">
+                <label
+                  className="block text-lg font-medium text-gray-900"
+                  htmlFor="first-name"
+                >
+                  Phone Number
+                </label>
+                <input
+                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder=""
+                  type="number"
+                />
+              </div>
             </div>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
+          {/* END EMAIL NUMBER */}
+          {/* start MESSAGE   */}
+          <div>
+            <div className="flex justify-between gap-20">
+              <div className="flex-1">
+                <label
+                  className="block text-lg font-medium text-gray-900"
+                  htmlFor="first-name"
+                >
+                  Message
+                </label>
+                <input
+                  className="mt-1 block w-full border-b border-gray-900  p-3 focus:outline-none bg-accent"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          {/* END MESSAGE   */}
+          <button className="bg-primary text-white text-2xl p-3 rounded-md  items-end">
+            Send Message{" "}
+          </button>
         </section>
       </div>
     </section>
