@@ -15,7 +15,7 @@ function Contact() {
         Any question or remarks? Just write us a message!
       </p>
       <div className="flex gap-10 mt-20 px-28">
-        <div className="bg-primary flex flex-col justify-around gap-10 text-white p-10 rounded-md h-[650px] w-[550px]">
+        <section className="bg-primary flex flex-col justify-around gap-10 text-white p-10 rounded-md h-[680px] w-[800px]">
           <div className="space-y-2">
             <h2 className="text-4xl">Contact information</h2>
             <p className="text-xl text-gray-200 font-light">
@@ -53,8 +53,50 @@ function Contact() {
               </li>
             </ul>
           </div>
-        </div>
-        <div>right</div>
+        </section>
+        <section className="bg-red-50 w-full">
+          <div>
+            <div className="flex justify-between">
+              <div>
+                <h3 className="text-gray-900 font-medium">First aName</h3>
+                <input
+                  type="text"
+                  className="w-full p-3 rounded-md bg-accnt  mt-2 border-none "
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div>
+                <h3>Last Name</h3>
+                <input
+                  type="text"
+                  className="w-full p-3 rounded-md mt-2 border-none "
+                  placeholder="Enter your Last name"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Last Name</h3>
+              <input
+                type="text"
+                className="w-full p-3 rounded-md mt-2"
+                placeholder="Enter your Last name"
+              />
+            </div>
+            <div>
+              <h3>Last Name</h3>
+              <input
+                type="text"
+                className="w-full p-3 rounded-md mt-2"
+                placeholder="Enter your Last name"
+              />
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
       </div>
     </section>
   );
