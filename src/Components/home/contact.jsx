@@ -14,7 +14,7 @@ function Contact() {
         {" "}
         Any question or remarks? Just write us a message!
       </p>
-      <div className="flex gap-10 mt-14 px-28">
+      <div className="flex gap-10 mt-20 px-28">
         <div className="bg-primary flex flex-col justify-around gap-10 text-white p-10 rounded-md h-[650px] w-[550px]">
           <div className="space-y-2">
             <h2 className="text-4xl">Contact information</h2>
