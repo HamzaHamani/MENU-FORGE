@@ -1,16 +1,16 @@
 function Aboutus() {
   return (
     <section className="bg-primary mt-28 p-10 h-screen  text-white">
-      <h2 className="text-3xl text-accent flex gap-6 items-center mb-8">
+      <h2 className="text-3xl tracking-wider text-accent flex gap-6 items-center mb-8">
         <span className="text-6xl">-</span> WHO WE ARE
       </h2>
       <div className="flex gap-10 ">
         <div className="flex-grow w-[30%]">
           <div className="flex flex-col gap-14 mt-16">
-            <h2 className="text-6xl flex-grow w-fit ">
+            <h2 className="text-6xl flex-grow w-fit font-medium ">
               We Help to Get Solutions
             </h2>
-            <p className=" text-2xl text-gray-200 w-[78%] mb-20">
+            <p className=" text-2xl text-gray-200 w-[78%] mb-20  font-light">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s,asdasdasdasdasd
@@ -25,7 +25,7 @@ function Aboutus() {
               />
               <div className="flex flex-col gap-4">
                 <h2 className="text-4xl">Lorem Ipsum</h2>
-                <p className="w-[75%] text-gray-200 text-base">
+                <p className="w-[75%] text-gray-200 text-base  font-light">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
@@ -39,14 +39,14 @@ function Aboutus() {
               />
               <div className="flex flex-col gap-4">
                 <h2 className="text-4xl">Lorem Ipsum</h2>
-                <p className="w-[75%] text-gray-200 text-base">
+                <p className="w-[75%] text-gray-200 text-base font-light">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
               </div>
             </div>
           </div>
-          <button className="bg-accent p-10 py-3 text-xl text-black">
+          <button className="bg-accent p-10 py-3 text-xl text-black mt-20">
             Read More
           </button>
         </div>
