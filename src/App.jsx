@@ -5,8 +5,20 @@ import Signin from "./pages/signin";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/dashboard";
 import Navbar from "./Components/navbar";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />

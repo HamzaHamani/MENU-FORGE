@@ -1,8 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { IoIosCreate } from "react-icons/io";
-import Lenis from "lenis";
-import { useEffect } from "react";
+
 import { IoCloudUpload, IoLogIn } from "react-icons/io5";
 function HomeHeader() {
   const container = useRef(null);
@@ -10,19 +9,9 @@ function HomeHeader() {
     target: container,
     offset: ["start start", "end start"],
   });
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, -8]);
 
   return (
     <motion.div style={{ scale, rotate }} className="sticky top-0 -z-10">
