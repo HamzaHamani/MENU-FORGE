@@ -5,8 +5,10 @@ import HomeHeader from "../Components/home/homeHeader";
 function Home() {
   return (
     <section>
-      <HomeHeader />
-      <Aboutus />
+      <div className="">
+        <HomeHeader />
+        <Aboutus />
+      </div>
       <Contact />
     </section>
   );

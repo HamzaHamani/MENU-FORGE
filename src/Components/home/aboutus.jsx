@@ -1,6 +1,6 @@
 function Aboutus() {
   return (
-    <section className="bg-primary mt-28 p-10 h-screen  text-white">
+    <section className="bg-primary mt-24 p-10 h-screen  text-white z-10">
       <h2 className="text-3xl tracking-wider text-accent flex gap-6 items-center mb-8">
         <span className="text-6xl">-</span> WHO WE ARE
       </h2>

@@ -1,8 +1,31 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { IoIosCreate } from "react-icons/io";
+import Lenis from "lenis";
+import { useEffect } from "react";
 import { IoCloudUpload, IoLogIn } from "react-icons/io5";
 function HomeHeader() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end start"],
+  });
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
+
   return (
-    <>
+    <motion.div style={{ scale, rotate }} className="sticky top-0 -z-10">
       <section className="flex justify-evenly mx-auto gap-12  w-[1700px]  mb-5">
         <div className=" flex flex-col gap-9 justify-center w-fit ">
           <h2 className="text-7xl texthe font-medium w-fit leading-[1.05] ">
@@ -26,7 +49,7 @@ function HomeHeader() {
           />
         </div>
       </section>
-      <section className="bg-primary flex gap-6 text-white p-10 rounded-3xl w-[80%] mx-auto py-10 shadow-2xl shadow-black/30">
+      <section className="bg-primary flex gap-6 text-white p-10 rounded-3xl w-[80%] mx-auto py-10 shadow-2xl shadow-black/30 -z-10">
         <div className="p-4 flex flex-col gap-6">
           <h2 className="text-3xl flex items-center gap-5">
             Create{" "}
@@ -64,7 +87,7 @@ function HomeHeader() {
           </p>
         </div>
       </section>
-    </>
+    </motion.div>
   );
 }
 
