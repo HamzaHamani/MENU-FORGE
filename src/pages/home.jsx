@@ -10,8 +10,9 @@ function Home() {
         <HomeHeader />
         <Aboutus />
       </div>
-      <Contact />
       <Sloganslider />
+      <Contact />
+
       <div className="h-screen"></div>
     </section>
   );

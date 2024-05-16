@@ -24,13 +24,13 @@ function Sliders() {
     target: container,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * -0.7]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.3]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * -0.3]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.4]);
 
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * -0.8]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * -0.2]);
 
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
-  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * -0.7]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6]);
+  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * -0.5]);
   return (
     <section
       className="columnChilds mt-28 flex flex-wrap justify-around"
@@ -51,12 +51,12 @@ const Column = ({ images, top, y = 0, top2, top3, top4, top5 }) => {
   return (
     <motion.div
       style={{ y }}
-      className={`relative ${top ? "top-40" : ""} ${top2 ? "-top-60" : ""}  ${top3 ? "top-48" : ""} ${top4 ? "-top-80" : ""} ${top5 ? "top-56" : ""} col flex flex-col gap-2`}
+      className={`relative ${top ? "top-1" : ""} ${top2 ? "-top-56" : ""}  ${top3 ? "top-3" : ""} ${top4 ? "-top-80" : ""} ${top5 ? "top-16" : ""} col flex flex-col gap-2`}
     >
       {images.map((image) => (
         <div
           key={image}
-          className={`h-[510px] w-[330px] rounded-3xl  bg-gray-200  ${top ? "top[45%]" : "top-2 shadow-sm"}`}
+          className={`h-[550px] w-[365px] rounded-3xl  bg-gray-200  ${top ? "top[45%]" : "top-2 shadow-sm"}`}
         >
           <img
             src={image}

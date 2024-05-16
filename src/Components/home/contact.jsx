@@ -6,36 +6,36 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section className="h-screen bg-accent   p-10 ">
-      <h2 className="text-4xl font-medium tracking-wider text-primary flex gap-6 items-center mb-2">
+    <section className="h-screen bg-primary p-10  text-white ">
+      <h2 className="mb-2 mt-14 flex items-center gap-6 text-4xl font-medium tracking-wider text-accent">
         <span className="text-6xl">-</span> Contact Us
       </h2>
       <p className="text-lg font-medium">
         {" "}
         Any question or remarks? Just write us a message!
       </p>
-      <div className="flex gap-10 mt-20 px-28">
-        <section className="bg-primary flex flex-col justify-around gap-10 text-white p-10 rounded-md h-[680px] w-[800px]">
+      <div className="mt-20 flex gap-10 px-28">
+        <section className="flex h-[680px] w-[800px] flex-col justify-around gap-10 rounded-md bg-accent p-10 text-black">
           <div className="space-y-2">
             <h2 className="text-4xl">Contact information</h2>
-            <p className="text-xl text-gray-200 font-light">
+            {/* <p className="text-xl font-light text-gray-800">
               Fell free to ask us anything{" "}
-            </p>
+            </p> */}
           </div>
           <ul className="flex flex-col gap-9">
-            <li className="flex items-center gap-6  font-light w-[70%]">
+            <li className="flex w-[70%] items-center  gap-6 font-light">
               <span className="text-2xl">
                 <FaLocationDot />
               </span>{" "}
               132 Dartmouth Street Boston, Massachusetts 02156 United States
             </li>
-            <li className="flex items-center gap-6  font-light w-[70%]">
+            <li className="flex w-[70%] items-center  gap-6 font-light">
               <span className="text-2xl">
                 <FaPhoneVolume />
               </span>{" "}
               +1012 3456 789
             </li>
-            <li className="flex items-center gap-6  font-light w-[70%]">
+            <li className="flex w-[70%] items-center  gap-6 font-light">
               {" "}
               <span className="text-2xl">
                 <IoMdMailOpen />
@@ -44,29 +44,29 @@ function Contact() {
             </li>
           </ul>
           <div>
-            <ul className="flex gap-4 items-center cursor-pointer">
-              <li className="bg-accent w-fit p-3 rounded-full text-black text-xl">
+            <ul className="flex cursor-pointer items-center gap-4">
+              <li className="w-fit rounded-full bg-accent p-3 text-xl text-black">
                 <FaInstagram />
               </li>
-              <li className="bg-accent w-fit p-3 rounded-full text-black text-xl cursor-pointer">
+              <li className="w-fit cursor-pointer rounded-full bg-accent p-3 text-xl text-black">
                 <FaWhatsapp />
               </li>
             </ul>
           </div>
         </section>
-        <section className="bg-red w-full p-8 flex flex-col gap-12">
+        <section className="bg-red flex w-full flex-col gap-12 p-8">
           {/* start first name last name */}
-          <div className="mt-8">
+          <div className="mt-8 ">
             <div className="flex justify-between gap-20">
               <div className="flex-1 ">
                 <label
-                  className="block text-lg font-medium text-gray-900"
+                  className="block text-lg font-medium text-gray-100"
                   htmlFor="first-name"
                 >
                   First Name
                 </label>
                 <input
-                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  className="mt-1 block w-full border-b border-gray-100 bg-primary  p-3 focus:border-indigo-300 focus:outline-none"
                   id="first-name"
                   name="first-name"
                   placeholder=""
@@ -75,13 +75,13 @@ function Contact() {
               </div>
               <div className="flex-1">
                 <label
-                  className="block text-lg font-medium text-gray-900"
+                  className="block text-lg font-medium text-gray-100"
                   htmlFor="first-name"
                 >
                   Last Name
                 </label>
                 <input
-                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  className="mt-1 block w-full border-b border-gray-100 bg-primary  p-3 focus:border-indigo-300 focus:outline-none"
                   id="first-name"
                   name="first-name"
                   placeholder=""
@@ -96,13 +96,13 @@ function Contact() {
             <div className="flex justify-between gap-20">
               <div className="flex-1 ">
                 <label
-                  className="block text-lg font-medium text-gray-900"
+                  className="block text-lg font-medium text-gray-100"
                   htmlFor="first-name"
                 >
                   Email
                 </label>
                 <input
-                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  className="mt-1 block w-full border-b border-gray-100 bg-primary  p-3 focus:border-indigo-300 focus:outline-none"
                   id="email"
                   name="email"
                   placeholder=""
@@ -111,13 +111,13 @@ function Contact() {
               </div>
               <div className="flex-1">
                 <label
-                  className="block text-lg font-medium text-gray-900"
+                  className="block text-lg font-medium text-gray-100"
                   htmlFor="first-name"
                 >
                   Phone Number
                 </label>
                 <input
-                  className="mt-1 block w-full border-b border-gray-900 focus:border-indigo-300  p-3 focus:outline-none bg-accent"
+                  className="mt-1 block w-full border-b border-gray-100 bg-primary  p-3 focus:border-indigo-300 focus:outline-none"
                   id="phone-number"
                   name="phone-number"
                   placeholder=""
@@ -132,13 +132,13 @@ function Contact() {
             <div className="flex justify-between gap-20">
               <div className="flex-1">
                 <label
-                  className="block text-lg font-medium text-gray-900"
+                  className="block text-lg font-medium text-gray-100"
                   htmlFor="first-name"
                 >
                   Message
                 </label>
                 <input
-                  className="mt-1 block w-full border-b border-gray-900  p-3 focus:outline-none bg-accent"
+                  className="mt-1 block w-full border-b border-gray-100  bg-primary p-3 focus:outline-none"
                   id="message"
                   name="message"
                   placeholder=""
@@ -148,7 +148,7 @@ function Contact() {
             </div>
           </div>
           {/* END MESSAGE   */}
-          <button className="bg-primary text-white text-2xl p-3 rounded-md  items-end">
+          <button className="items-end rounded-md bg-accent p-3 text-2xl  text-black">
             Send Message{" "}
           </button>
         </section>
