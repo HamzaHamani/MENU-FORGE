@@ -141,7 +141,7 @@ function Contact() {
                   className="mt-1 block w-full border-b border-gray-900  p-3 focus:outline-none bg-accent"
                   id="message"
                   name="message"
-                  placeholder="Write your message here..."
+                  placeholder=""
                   type="text"
                 />
               </div>
