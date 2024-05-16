@@ -12,7 +12,7 @@ function Sloganslider() {
         </h3>
         <h2 className="mt-2 text-6xl">Get to know them</h2>
       </div>
-      <div>
+      <div className="overflow-hidden">
         <Sliders />
       </div>
     </section>

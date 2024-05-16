@@ -1,0 +1,6 @@
+.column {
+  position: relative;
+}
+.column:nth-child(1) {
+  top: -105%;
+}
