@@ -13,7 +13,7 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  @apply bg-background;
+  background-color: #f2f9ed;
 }
 .jaro {
   font-family: "Jaro", sans-serif;

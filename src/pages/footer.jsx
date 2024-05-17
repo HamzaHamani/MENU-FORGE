@@ -1,39 +1,41 @@
 function Footer() {
   return (
-    <footer className="h-screen text-white">
-      <div className="mt-2  p-10"></div>
+    <footer className="sticky bottom-0 -z-30 h-screen text-[#e2e1e1]">
       <div className="bg-secondary2 p-6">
         <p className="text-center text-black underline ">
           Discover whats new every month at menuforge.com
         </p>
       </div>
-      <section className="relative h-[88%] overflow-hidden bg-primary">
+      <section className="bac relative h-[93%] overflow-hidden bg-primary">
         <div className="flex justify-between p-14">
           <div className="flex flex-col gap-7">
             <img src="../../public/logoWhite.png" width={100} />
 
-            <p className="text-primaryLighter font-medium">
-              Copyright @2024{" "}
+            <p className="font-medium text-accent">
+              @2024{" "}
               <a href="#" className="cursor-pointer underline">
                 MenuForge
               </a>
+              . All rights reserved.{" "}
             </p>
           </div>
           <div className="flex justify-end gap-10">
             <div className="flex w-[35%] flex-col gap-8">
-              <h3 className="w-fit text-lg font-medium text-accent">About</h3>
+              <h3 className="w-fit text-lg font-bold text-accent ">About</h3>
               <p className=" text-sm">
                 Menu Forge lets restaurants create and showcase digital menus
                 with ease.
               </p>
             </div>
             <div className="flex flex-col gap-8">
-              <h3 className="text-primaryLighter text-lg font-medium">
-                Social
-              </h3>
-              <ul className="flex flex-col gap-3">
-                <li>Instagram</li>
-                <li>Linkedin</li>
+              <h3 className="text-lg font-bold text-accent">Social</h3>
+              <ul className="flex  flex-col gap-4">
+                <li className="cursor-pointer">
+                  <a href="#">Instagram</a>{" "}
+                </li>
+                <li className="cursor-pointer">
+                  <a href="#">Linkedin</a>{" "}
+                </li>
               </ul>
             </div>
           </div>

@@ -14,19 +14,22 @@ function HomeHeader() {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -8]);
 
   return (
-    <motion.div style={{ scale, rotate }} className="sticky top-0 -z-10">
-      <section className="flex justify-evenly mx-auto gap-12  w-[1700px]  mb-5">
-        <div className=" flex flex-col gap-9 justify-center w-fit ">
-          <h2 className="text-7xl texthe font-medium w-fit leading-[1.05] ">
+    <motion.div
+      style={{ scale, rotate }}
+      className="-z-9 sticky top-0 bg-background"
+    >
+      <section className="mx-auto mb-5 flex w-[1700px]  justify-evenly  gap-12">
+        <div className=" flex w-fit flex-col justify-center gap-9 ">
+          <h2 className="texthe w-fit text-7xl font-medium leading-[1.05] ">
             New designs <br /> New inspirations
           </h2>
 
-          <p className="w-[40%] text-gray-700 text-[17px] aeonik">
+          <p className="aeonik w-[40%] text-[17px] text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             excepturi. Rerum iusto temporibus hic veritatis. Incidunt quos ullam
             minima es
           </p>
-          <button className="self-start bg-primary p-3 px-14 text-lg text-white rounded-full ">
+          <button className="self-start rounded-full bg-primary p-3 px-14 text-lg text-white ">
             Explore
           </button>
         </div>
@@ -38,39 +41,39 @@ function HomeHeader() {
           />
         </div>
       </section>
-      <section className="bg-primary flex gap-6 text-white p-10 rounded-3xl w-[80%] mx-auto py-10 shadow-2xl shadow-black/30 -z-10">
-        <div className="p-4 flex flex-col gap-6">
-          <h2 className="text-3xl flex items-center gap-5">
+      <section className="-z-10 mx-auto flex w-[80%] gap-6 rounded-3xl bg-primary p-10 py-10 text-white shadow-2xl shadow-black/30">
+        <div className="flex flex-col gap-6 p-4">
+          <h2 className="flex items-center gap-5 text-3xl">
             Create{" "}
             <span className="text-lg">
               <IoIosCreate />
             </span>
           </h2>
-          <p className="w-[80%] text-gray-200 text-[16px]">
+          <p className="w-[80%] text-[16px] text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             quaerat.
           </p>
         </div>
-        <div className="p-4 flex flex-col gap-6">
-          <h2 className="text-3xl flex items-center gap-5">
+        <div className="flex flex-col gap-6 p-4">
+          <h2 className="flex items-center gap-5 text-3xl">
             Sign in{" "}
             <span className="text-lg">
               <IoLogIn />
             </span>
           </h2>
-          <p className="w-[80%] text-gray-200 text-[16px]">
+          <p className="w-[80%] text-[16px] text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             quaerat.
           </p>
         </div>
-        <div className="p-4 flex flex-col gap-6">
-          <h2 className="text-3xl flex items-center gap-5">
+        <div className="flex flex-col gap-6 p-4">
+          <h2 className="flex items-center gap-5 text-3xl">
             Upload{" "}
             <span className="text-lg">
               <IoCloudUpload />
             </span>
           </h2>
-          <p className="w-[80%] text-gray-200 text-[16px]">
+          <p className="w-[80%] text-[16px] text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             quaerat.
           </p>
