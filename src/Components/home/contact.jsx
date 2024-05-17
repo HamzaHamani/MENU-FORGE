@@ -15,7 +15,9 @@ function Contact() {
         Any question or remarks? Just write us a message!
       </p>
       <div className="mt-20 flex gap-10 px-28">
+        {" "}
         <section className="flex h-[680px] w-[800px] flex-col justify-around gap-10 rounded-md bg-accent p-10 text-black">
+          {/* ! // TODO replace content with img mybe cuz yellow color is too much or add patern or texture or anyting to change */}
           <div className="space-y-2">
             <h2 className="text-4xl">Contact information</h2>
             {/* <p className="text-xl font-light text-gray-800">
