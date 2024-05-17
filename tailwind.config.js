@@ -3,9 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        spacemono: ["Space Mono", "monospace"],
+      },
       colors: {
         background: "#F2F9ED",
         primary: "#064929",
+        primaryLighter: "#1eff44",
         darkprimary: "#032019",
         secondary1: "#AFDD97",
         secondary2: "#40AD52",
