@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="sticky bottom-0 -z-30 h-screen text-[#e2e1e1]">
+    <footer className=" bottom-0 -z-30 h-screen text-[#e2e1e1]">
       <div className="bg-secondary2 p-6">
         <p className="text-center text-black underline ">
           Discover whats new every month at menuforge.com
