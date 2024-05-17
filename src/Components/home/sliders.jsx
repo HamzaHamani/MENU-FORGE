@@ -54,7 +54,7 @@ const Column = ({ images, top, y = 0, top2, top3, top4, top5 }) => {
   return (
     <motion.div
       style={{ y }}
-      className={`relative ${top ? "top-1" : ""} ${top2 ? "-top-56" : ""}  ${top3 ? "top-3" : ""} ${top4 ? "-top-80" : ""} ${top5 ? "top-16" : ""} col flex flex-col gap-2`}
+      className={`relative ${top ? "top-1" : ""} ${top2 ? "-top-36" : ""}  ${top3 ? "top-3" : ""} ${top4 ? "-top-60" : ""} ${top5 ? "top-16" : ""} col flex flex-col gap-2`}
     >
       {images.map((image) => (
         <div

@@ -42,7 +42,7 @@ function Footer() {
         </div>
         <div className="flex w-[10000px] flex-col  overflow-hidden bg-yellow-50 text-secondary2">
           <div className=" absolute -bottom-10  -ml-3 text-[18rem] font-bold capitalize">
-            <p className="font-spacemono absolute -top-10 left-56 text-center text-[6rem] font-semibold uppercase tracking-[0.5em] ">
+            <p className="absolute -top-10 left-56 text-center font-spacemono text-[6rem] font-semibold uppercase tracking-[0.5em] ">
               {" "}
               Dont waste the{" "}
             </p>

@@ -5,8 +5,7 @@
   top: -105%;
 }
 .bac {
-  background-image: linear-gradient(#064426 2px, transparent 2px),
-    linear-gradient(to right, #064426 2px, transparent 2px);
+  background-image: radial-gradient(#275e43 2px, transparent 2px);
   background-size: 60px 60px;
   background-color: #064929;
 }
