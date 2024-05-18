@@ -11,7 +11,7 @@ function Home() {
         <HomeHeader />
         <Aboutus />
       </div>
-      <Sloganslider />
+      {/* <Sloganslider /> */}
       <Contact />
       {/* contact form my update it i dont like the design ofit */}
       <Footer />

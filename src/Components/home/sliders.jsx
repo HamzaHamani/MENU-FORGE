@@ -9,7 +9,7 @@ const images = [
   "https://images.unsplash.com/photo-1551489186-c892fa1428c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
   "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
   "https://images.unsplash.com/photo-1613420471688-009b97bc5655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8",
-  "https://images.unsplash.com/photo-1564759298141-cef86f51d4d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1564759298141-cef86f51d4d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixd=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVudXxlbnwwfHwwfHx8MA%3D%3D",
   "https://plus.unsplash.com/premium_photo-1664189122862-d4f77cdafcab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnV8ZW58MHx8MHx8fDA%3D",
   "https://images.unsplash.com/photo-1545418314-7ce0b9b53901?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG1lbnV8ZW58MHx8MHx8fDA%3D",
   "https://images.unsplash.com/photo-1623667322051-18662ce6334c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG1lbnV8ZW58MHx8MHx8fDA%3D",
@@ -27,23 +27,23 @@ function Sliders() {
     target: container,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * -0.3]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.4]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * -0.15]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 0.1]);
 
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * -0.2]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * -0.19]);
 
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.6]);
-  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * -0.5]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 0.14]);
+  const y5 = useTransform(scrollYProgress, [0, 1], [0, height * -0.14]);
   return (
     <section
-      className="columnChilds mt-28 flex flex-wrap justify-around"
+      className="columnChilds py- mt-28 flex flex-wrap justify-around"
       ref={container}
     >
-      <Column images={[images[0], images[1], images[7]]} y={y} top={true} />
-      <Column images={[images[2], images[3], images[1]]} y={y2} top2={true} />
-      <Column images={[images[4], images[5], images[2]]} y={y3} top3={true} />
-      <Column images={[images[6], images[7], images[3]]} y={y4} top4={true} />
-      <Column images={[images[8], images[9], images[1]]} y={y5} top5={true} />
+      <Column images={[images[0], images[1]]} y={y} top={true} />
+      <Column images={[images[2], images[3]]} y={y2} top2={true} />
+      <Column images={[images[4], images[5]]} y={y3} top3={true} />
+      <Column images={[images[6], images[7]]} y={y4} top4={true} />
+      <Column images={[images[8], images[9]]} y={y5} top5={true} />
     </section>
   );
 }
@@ -54,17 +54,17 @@ const Column = ({ images, top, y = 0, top2, top3, top4, top5 }) => {
   return (
     <motion.div
       style={{ y }}
-      className={`relative ${top ? "top-1" : ""} ${top2 ? "-top-36" : ""}  ${top3 ? "top-3" : ""} ${top4 ? "-top-60" : ""} ${top5 ? "top-16" : ""} col flex flex-col gap-2`}
+      className={`relative ${top ? "top-1" : ""} ${top2 ? "-top-32" : ""}  ${top3 ? "top-3" : ""} ${top4 ? "-top-32 " : ""} ${top5 ? "" : ""} col flex flex-col gap-2`}
     >
       {images.map((image) => (
         <div
           key={image}
-          className={`h-[550px] w-[365px] rounded-3xl  bg-gray-200  ${top ? "top[45%]" : "top-2 shadow-sm"}`}
+          className={`h-[480px] w-[370px] rounded-3xl  bg-gray-200  ${top ? "top[45%]" : "top-2 shadow-sm"}`}
         >
           <img
             src={image}
             alt="slider"
-            className="h-full w-full rounded-3xl object-cover contrast-75 saturate-100"
+            className="h-full w-full rounded-3xl object-cover  "
           />
         </div>
       ))}

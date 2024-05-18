@@ -1,0 +1,37 @@
+<div className="space-y-2">
+            <h2 className="text-4xl">Contact information</h2>
+            {/* <p className="text-xl font-light text-gray-800">
+              Fell free to ask us anything{" "}
+            </p> */}
+          </div>
+          <ul className="flex flex-col gap-9">
+            <li className="flex w-[70%] items-center  gap-6 font-light">
+              <span className="text-2xl">
+                <FaLocationDot />
+              </span>{" "}
+              132 Dartmouth Street Boston, Massachusetts 02156 United States
+            </li>
+            <li className="flex w-[70%] items-center  gap-6 font-light">
+              <span className="text-2xl">
+                <FaPhoneVolume />
+              </span>{" "}
+              +1012 3456 789
+            </li>
+            <li className="flex w-[70%] items-center  gap-6 font-light">
+              {" "}
+              <span className="text-2xl">
+                <IoMdMailOpen />
+              </span>{" "}
+              demo@gmail.com
+            </li>
+          </ul>
+          <div>
+            <ul className="flex cursor-pointer items-center gap-4">
+              <li className="w-fit rounded-full bg-accent p-3 text-xl text-black">
+                <FaInstagram />
+              </li>
+              <li className="w-fit cursor-pointer rounded-full bg-accent p-3 text-xl text-black">
+                <FaWhatsapp />
+              </li>
+            </ul>
+          </div>
